@@ -1,0 +1,15 @@
+1.st接口和ArrayList、LinkedList实现，HashMap和TreeMap等。这些数据结构里也涉及到排序等算法  Vector
+2.core包，也就是String、StringBuffer等
+3.Java IO基础，那么不妨读读FileReader等类。我建议大家看看《Java In A Nutshell》，里面有整个Java IO的架构图。Java IO类库，如果不理解其各接口和继承关系，则阅读始终是一头雾水。 
+Java IO 包，我认为是对继承和接口运用得最优雅的案例
+4.读这些源码时，只需要读懂一些核心类即可，如和ArrayList类似的二三十个类，对于每一个类，也不一定要每个方法都读懂。像String有些方法已经到虚拟机层了(native方法)，如hashCode方法
+5.，可以对照看看JRockit的源码，同一套API，两种实现，很有意思的
+6.不妨看看针对虚拟机的那套代码，如System ClassLoader的原理，它不在JDK包里，JDK是基于它的。JDK的源码Zip包只有10来M，它像是有50来M，Sun公司有下载的，不过很隐秘
+
+
+
+
+
+
+
+from --- http://www.iteye.com/topic/1113732

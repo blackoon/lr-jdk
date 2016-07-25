@@ -111,9 +111,13 @@ public class MultiplexerTimeServer implements Runnable{
 			}
 		}
 	}
-	private void doWrite(SocketChannel sc, String response) {
-		if(response !=null){
-			
+	private void doWrite(SocketChannel channel, String response) throws IOException {
+		if(response !=null && response.trim().length() >0){
+			byte[] bytes = response.getBytes();
+			ByteBuffer writeBuffer =ByteBuffer.allocate(bytes.length);
+			writeBuffer.put(bytes);
+			writeBuffer.flip();
+			channel.write(writeBuffer);
 		}
 	}
 

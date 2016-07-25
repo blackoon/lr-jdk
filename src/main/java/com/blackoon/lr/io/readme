@@ -20,8 +20,10 @@
 		channel可以分两大类：分别是网络读写的SelectableChannel和用于文件操作的FileChannel
 	4. 多路复用器Selector
 		java NIO编程的基础，熟练地掌握Selector对于掌握NIO编程至关重要。
+	5.代码暂不考虑半包读半包写
 * 基于NIO2.0 的异步非阻塞（AIO）编程
-
+	jdk1.7升级了NIO类库。称为NIO2.0
+	aio,他不需要通过多路复用器（Selector）对注册的通道进行轮询操作即可实现异步读写，从而简化NIO编程模型。
 * 为什么要使用BIO编程
 
 * 为什么选择Netty

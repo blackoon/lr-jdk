@@ -16,5 +16,9 @@ public class Client {
 //		Set set=null;
 //		LinkedHashSet lhs=null;
 //		TreeSet treeSet=null;
+		System.out.println(16>>>3);
+		System.out.println(2<<3);
+//		BigInteger
+		
 	}
 }
